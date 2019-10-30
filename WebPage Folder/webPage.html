@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link href="main.css" rel="stylesheet" type="text/css" />
+        <title>What's My Workout</title>
+    </head>
+
+    <body>
+         <nav>
+                <ul>
+                    <li><a href="#"><strong>Menu</strong></a>
+                        <ul>
+                            <li><a href="webPage.html">Home</a></li>
+                            <li><a href="#">About Programs</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        <header>
+
+            <h1>What's My Workout</h1>  
+           
+        </header>
+
+
+        
+        <h2>Select Muscle Group</h2>
+        
+        <div class="interact">
+            <select id = "selectMuscle">
+                <option id = "chest" value = "Chest">Chest</option>
+                <option id = "back" value = "Back">Back</option>
+                <option id = "arms" value = "Arms">Arms</option>
+                <option id = "legs" value = "Legs">Legs</option>
+                <option id = "shoulders" value = "Shoulders">Shoulders</option>
+            </select>
+
+            <button onclick ="btnFunction()" type="button"><strong>Enter</strong></button>
+        </div>
+
+        <div class="secondLine">
+            <h3>
+                Auto-created workout for selected muscle group:
+            </h3>
+        </div>
+        <div class="result">
+            <p id=buttonDisplay><p>
+
+            <ul id="workouts"></ul>    
+        </div>
+
+        <script src="main.js"></script>
+
+    </body>
+
+
+</html>
